@@ -1,17 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 body{
-    background: rgb(33, 209, 151);
+    background: rgb(73, 234, 246);
 }
 
 h1,h2{
-     font-family: "Bitcount Prop Single Ink", system-ui;
+      font-family: "Passion One", sans-serif;
 }
+ 
 p{
-    @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    font-family: "Lato", sans-serif;
 }
     header{
     text-align: center;
     border-bottom: solid 10px rgb(4, 27, 143);
     margin-bottom: 30px;
     padding: 20px;
+}
+
+#foto-perfil {
+    border: 5px solid #000;   
+    border-radius: 20px;     
+    height: auto;             
+}
+
+article{
+    border: solid rgb(249, 17, 17) 2px;
+    width: 30%;
+    float:left
 }
