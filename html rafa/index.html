@@ -16,15 +16,17 @@
         <p>Desarrollador fullstack | Estudiante de ingenieria en TI</p>
     </header>
     <!--CREANDO MENU DE NAVEGACION-->
-    <nav>
-        <a href="#">inicio</a> <!--CREA ENLACES-->
-        <a href="#">Sobre mi</a>
-        <a href="#">Mi experiencia</a>
-        <a href="#">Contactame</a>
+    <nav id="menu-principal">
+        <ul>
+            <li><a href="#bienvenida">Sobre mi</a></li><!--CREA ENLACES-->
+            <li><a href="#experiencia">Mi experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contactame</a></li>
+        </ul>
     </nav>
     <!--PARTE PRINCIPAL-->
     <main>
-        <section>
+        <section id="bienvenida">
             <h2>Bienvenidos a mi portafolio personal</h2>
             <p>Soy <mark>David Mendoza Avalos</mark> me especializo en <strong>Tecnologías de la información</strong>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -40,46 +42,95 @@
                 <p>Actualmente estudio la carrera de Tecnologías de la Informacion e Innovación digital</p>
             </aside>
         </section>
-        <section>
+        <section id="experiencia">
             <h2>Experiencia Profesional</h2>
-            <article>
-                <h3>Proyecto Integrador</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
-                <ul>
-                    <li>Tecnologías: .NET, MySQL</li>
-                    <li>Gestion de adopción de mascotas</li>
-                    <li>Basado en las ODS</li>
-                    <li>Trabajo de Equipo</li>
+            <div id="lista-proyectos">
+                <article class="proyecto">
+                    <h3>Proyecto Integrador</h3>
+
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
+                    <ul>
+                        <li>Tecnologías: .NET, MySQL</li>
+                        <li>Gestion de adopción de mascotas</li>
+                        <li>Basado en las ODS</li>
+                        <li>Trabajo de Equipo</li>
+                    </ul>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Proyecto IntegradorII</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <time datetime="2025-07">Julio 2025</time> - <time datetime="2025-08">Septiembre 2025</time>
+                    <ul>
+                        <li>Tecnologías: HTML, CSS, JavaScript</li>
+                        <li>Diseño de una página web de portafolio personal</li>
+                        <li>Buenas prácticas de usabilidad</li>
+                        <li>Trabajo con GitHub</li>
+                    </ul>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Proyecto IntegradorIII</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <time datetime="2025-08">Septiembre 2025</time> - <time datetime="2025-09">Octubre 2025</time>
+                    <ul>
+                        <li>Tecnologías: Kotlin, Android Studio</li>
+                        <li>App para registrar, editar y eliminar tareas</li>
+                        <li>Notificaciones y recordatorios simples</li>
+                        <li>Interfaz amigable</li>
+                    </ul>
+                </article>
+            </div>
+
+            <section id="habilidades">
+                <h2>Habilidades y competencias</h2>
+                <h3>Lenguajes y Tecnologías </h3>
+                <ul class="lista-tecnologías">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>C#</li>
+
                 </ul>
-            </article>
-        </section>
-        <section>
-            <article>
-                <h3>Proyecto IntegradorII</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <time datetime="2025-07">Julio 2025</time> - <time datetime="2025-08">Septiembre 2025</time>
-                <ul>
-                    <li>Tecnologías: HTML, CSS, JavaScript</li>
-                    <li>Diseño de una página web de portafolio personal</li>
-                    <li>Buenas prácticas de usabilidad</li>
-                    <li>Trabajo con GitHub</li>
-                </ul>
-            </article>
-        </section>
-        <section>
-            <article>
-                <h3>Proyecto IntegradorIII</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <time datetime="2025-08">Septiembre 2025</time> - <time datetime="2025-09">Octubre 2025</time>
-                <ul>
-                    <li>Tecnologías: Kotlin, Android Studio</li>
-                    <li>App para registrar, editar y eliminar tareas</li>
-                    <li>Notificaciones y recordatorios simples</li>
-                    <li>Interfaz amigable</li>
-                </ul>
-            </article>
-        </section>
+                <h3>Niveles de Dominio</h3>
+
+                <div>
+                    <label> HTML5</label>
+                    <progress max="100" value="80">80%</progress>
+                </div>
+                <div>
+                    <label> CSS</label>
+                    <progress max="100" value="60">60%</progress>
+                </div>
+                <div>
+
+                    <label> HTML5</label>
+                    <progress max="100" value="20">20%</progress>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <h2>Contactame</h2>
+                <form>
+                    <div class="campos">
+                        <label>Nombre completo</label>
+                        <input type="text" placeholder="Nombre completo" required />
+                    </div>
+                    <div class="campos">
+                        <label>Correo electronico</label>
+                        <input type="email" placeholder="Ejemplo@gmail.com" required />
+                    </div>
+                    <div class="campos">
+                        <label>Mensajes</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="campos">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
     </main>
     <!--PIE DE LA PAGINA-->
     <footer>
