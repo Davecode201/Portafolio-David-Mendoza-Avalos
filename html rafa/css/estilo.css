@@ -117,9 +117,10 @@ progress{
 
 #contacto label{
     font-size: 20px;
+    width: 200px;
 }
 
-#contacto-input, textarea{
+#contacto-input, textarea, select{
     font-size: 20px;
     border-top: solid 5px rgb(118, 0, 154);
     padding: 10px;
@@ -140,4 +141,10 @@ progress{
 .campos{
     clear: both;
     padding-top: 20px;
+}
+
+#contacto .opciones{
+    width: 5%;
+    padding: 10px;
+    border: solid 1px blue;
 }

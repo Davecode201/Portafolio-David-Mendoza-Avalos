@@ -127,6 +127,36 @@
                         <textarea></textarea>
                     </div>
                     <div class="campos">
+                        <label>Motivo</label>
+                        <select>
+                            <option>Cotización</option>
+                            <option>Prácticas profesionales</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="campos">
+                        <label>Fecha de evento</label>
+                        <input type="date" placeholder="aaaa-mm-dd" />
+                    </div>
+                    <div>
+                        <label>Modo de contacto</label>
+                        <input type="checkbox" name="canal" class="opciones"> WhatsApp
+                        <input type="checkbox" name="canal" class="opciones"> Correo electrónico
+                    </div>
+                    <div class="campos">
+                        <label>Es cliente?</label>
+                        <input type="radio" class="opciones">Sí
+                        <input type="radio" class="opciones">No
+                    </div>
+                    <div class="campos">
+                        <label>Número de colaboradores</label>
+                        <input type="number" />
+                    </div>
+                    <div class="campos">
+                        <label>Enviar requerimientos</label>
+                        <input type="file" name="foto"/>
+                    </div>
+                    <div class="campos">
                         <button type="submit">Enviar</button>
                     </div>
                 </form>
